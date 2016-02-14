@@ -8,18 +8,18 @@ TWIG syntax highlighting from whatwedo
 
 ## Emmet work !
 TWIG pack overwrite highlighting HTML
-![emmet](https://github.com/Bajdzis/vscode-database/raw/master/readme/emmet.gif)
+![emmet](https://github.com/Bajdzis/vscode-twig-pack/raw/master/readme/emmet.gif)
 
 ## Snippets & completion
-![Snippets](https://github.com/Bajdzis/vscode-database/raw/master/readme/emmet.gif)
+![Snippets](https://github.com/Bajdzis/vscode-twig-pack/raw/master/readme/snippet.gif)
 
 ## Hovers
-![Hovers](https://github.com/Bajdzis/vscode-database/raw/master/readme/emmet.gif)
+![Hovers](https://github.com/Bajdzis/vscode-twig-pack/raw/master/readme/hover.gif)
 
 ## Install
 * Press `Shift+Ctrl+P` 
 * Pick `Extensions: Install Extension`
-* Find `vscode-database`
+* Find `vscode-twig-pack`
  
 ## License
 MIT © [Bajdzis](https://github.com/Bajdzis)
