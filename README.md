@@ -20,8 +20,6 @@ TWIG pack overwrite highlighting HTML
 * Press `Shift+Ctrl+P` 
 * Pick `Extensions: Install Extension`
 * Find `vscode-twig-pack`
- 
+
 ## License
 MIT © [Bajdzis](https://github.com/Bajdzis)
-
-** Enjoy!**

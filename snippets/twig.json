@@ -179,7 +179,7 @@
     "set": {
         "prefix": "set",
         "body": [
-        "{% set ${name} = ${value} %}"
+        "{% set ${name} = ${value} %}$1"
         ],
         "description": "Assign values to variables"
     },

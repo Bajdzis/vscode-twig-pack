@@ -16,6 +16,11 @@
             "url": "https://github.com/whatwedo/vscode-twig"
         }
     ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Bajdzis/vscode-twig-pack"
+    },
+    "bugs": "https://github.com/Bajdzis/vscode-twig-pack/issues",
 	"engines": {
 		"vscode": "^0.10.1"
 	},
