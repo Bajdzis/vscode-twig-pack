@@ -1,0 +1,73 @@
+{
+	"name": "vscode-twig-pack",
+	"displayName": "TWIG pack",
+	"description": "Snippets, auto-completion, emmet, and syntax(whatwedo) for TWIG language",
+	"version": "1.0.0",
+    "icon": "icon.png",
+    "license": "MIT",
+	"publisher": "bajdzis",
+    "author": {
+        "name": "Rafał Budzis",
+        "url": "http://budzis.pl"
+    },
+    "contributors": [
+        {
+            "name": "whatwedo",
+            "url": "https://github.com/whatwedo/vscode-twig"
+        }
+    ],
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Languages",
+        "Snippets"
+	],
+    "keywords": [
+        "twig",
+        "snippets",
+        "completion",
+        "template"
+    ],
+    "galleryBanner": {
+        "color": "#BBCE29",
+        "theme": "light"
+    },
+	"activationEvents": [
+		"*"
+	],
+	"main": "./extension",
+	"contributes": {
+		"snippets": [
+			{
+				"language": "html",
+				"path": "./snippets/filters.json"
+			},
+            {
+				"language": "html",
+				"path": "./snippets/twig.json"
+			},
+            {
+				"language": "html",
+				"path": "./snippets/functions.json"
+			}
+		],
+        "languages": [{
+			"id": "html",
+			"aliases": ["HTML", "twig"],
+			"extensions": [".twig",".html"],
+			"configuration": "./twig.configuration.json"
+		}],
+		"grammars": [{
+			"language": "html",
+			"scopeName": "text.html.twig",
+			"path": "./syntaxes/twig.tmLanguage"
+		}]
+	},
+    "dependencies": {
+        "fs": "0.0.2"
+    },
+	"devDependencies": {
+		"vscode": "0.10.x"
+	}
+}
