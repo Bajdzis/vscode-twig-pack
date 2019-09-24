@@ -3,76 +3,114 @@
 	"displayName": "TWIG pack",
 	"description": "Snippets, auto-completion, emmet, and syntax(whatwedo) for TWIG language",
 	"version": "1.0.0",
-    "icon": "icon.png",
-    "license": "MIT",
+	"icon": "icon.png",
+	"license": "MIT",
 	"publisher": "bajdzis",
-    "author": {
-        "name": "Rafał Budzis",
-        "url": "http://budzis.pl"
-    },
-    "contributors": [
-        {
-            "name": "whatwedo",
-            "url": "https://github.com/whatwedo/vscode-twig"
-        }
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/Bajdzis/vscode-twig-pack"
-    },
-    "bugs": "https://github.com/Bajdzis/vscode-twig-pack/issues",
+	"author": {
+		"name": "Rafał Budzis",
+		"url": "http://budzis.pl"
+	},
+	"contributors": [
+		{
+			"name": "whatwedo",
+			"url": "https://github.com/whatwedo/vscode-twig"
+		}
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Bajdzis/vscode-twig-pack"
+	},
+	"bugs": "https://github.com/Bajdzis/vscode-twig-pack/issues",
 	"engines": {
 		"vscode": "^0.10.1"
 	},
 	"categories": [
 		"Languages",
-        "Snippets"
+		"Snippets"
 	],
-    "keywords": [
-        "twig",
-        "snippets",
-        "completion",
-        "template"
-    ],
-    "galleryBanner": {
-        "color": "#BBCE29",
-        "theme": "light"
-    },
+	"keywords": [
+		"twig",
+		"snippets",
+		"completion",
+		"template"
+	],
+	"galleryBanner": {
+		"color": "#BBCE29",
+		"theme": "light"
+	},
 	"activationEvents": [
 		"*"
 	],
 	"main": "./extension",
 	"contributes": {
+		"languages": [
+			{
+				"id": "twig",
+				"aliases": [
+					"HTML (Twig)",
+					"twig"
+				],
+				"extensions": [
+					".twig",
+					".html.twig"
+				],
+				"configuration": "./twig.configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "twig",
+				"scopeName": "text.html.twig",
+				"path": "./syntaxes/twig.tmLanguage"
+			}
+		]
+	},
+	"contributes": {
 		"snippets": [
 			{
-				"language": "html",
+				"language": "twig",
 				"path": "./snippets/filters.json"
 			},
-            {
-				"language": "html",
+			{
+				"language": "twig",
 				"path": "./snippets/twig.json"
 			},
-            {
-				"language": "html",
+			{
+				"language": "twig",
 				"path": "./snippets/functions.json"
 			}
 		],
-        "languages": [{
-			"id": "html",
-			"aliases": ["HTML", "twig"],
-			"extensions": [".twig",".html"],
-			"configuration": "./twig.configuration.json"
-		}],
-		"grammars": [{
-			"language": "html",
-			"scopeName": "text.html.twig",
-			"path": "./syntaxes/twig.tmLanguage"
-		}]
+		"languages": [
+			{
+				"id": "twig",
+				"aliases": [
+					"HTML (Twig)",
+					"twig"
+				],
+				"extensions": [
+					".twig",
+					".html.twig"
+				],
+				"configuration": "./twig.configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "twig",
+				"scopeName": "text.html.twig",
+				"path": "./syntaxes/twig.tmLanguage"
+			}
+		]
 	},
-    "dependencies": {
-        "fs": "0.0.2"
-    },
+	"dependencies": {
+		"fs": "0.0.2"
+	},
 	"devDependencies": {
 		"vscode": "0.10.x"
+	},
+	"__metadata": {
+		"id": "2be51393-4e56-4117-a5e5-fdcd6db0c4af",
+		"publisherId": "8cdbaeb1-1e01-4550-a89a-1f7a157f9e62",
+		"publisherDisplayName": "Bajdzis"
 	}
 }
