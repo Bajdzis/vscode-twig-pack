@@ -114,7 +114,7 @@
     "replace": {
         "prefix": "replace",
         "body": "replace('${search}' : '${replace}')",
-        "text": "replace('search' : 'replace')",
+        "text": "replace({'search' : 'replace'})",
         "description": "filter formats a given string by replacing the placeholders."
     },
     "reverse": {
