@@ -82,6 +82,6 @@
 		"fs": "0.0.2"
 	},
 	"devDependencies": {
-		"vscode": "0.10.x"
+		"vscode": "1.1.x"
 	}
 }
