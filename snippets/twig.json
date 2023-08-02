@@ -24,7 +24,7 @@
         "body": [
             "{% block ${name} %}",
             "\t$1",
-            "{% endblock ${name} %}"
+            "{% endblock %}"
         ],
         "description": "When a template uses inheritance and if you want to print a block multiple times, use the block function"
     },
